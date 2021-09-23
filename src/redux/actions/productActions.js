@@ -9,18 +9,12 @@ export const fetchProducts = () => async (dispatch) => {
   });
 };
 
-export const setProducts = (products) => {
-  return {
-    type: ActionTypes.SET_PRODUCTS,
-    payload: products,
-  };
-};
-
-export const selectedProduct = (product) => {
-  return {
+export const fetchProduct = (id) => async (dispatch) => {
+  const response = await fakeStoreApi.get(`/products/${id}`);
+  dispatch({
     type: ActionTypes.SELECTED_PRODUCT,
-    payload: product,
-  };
+    payload: response.data,
+  });
 };
 
 export const removeSelectedProduct = (product) => {
