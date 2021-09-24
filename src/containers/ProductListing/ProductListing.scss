@@ -1,6 +1,19 @@
 .listing-wrapper {
-  padding: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .listing-wrapper {
+    padding-top: 20%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .listing-wrapper {
+    padding-top: 10%;
+  }
 }

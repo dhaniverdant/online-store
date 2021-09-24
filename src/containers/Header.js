@@ -2,11 +2,13 @@ import React from "react";
 
 const Header = () => {
   return (
-    <div className="ui fixed menu">
-      <div className="ui container center">
-        <h2>FakeShop</h2>
-      </div>
+    <nav className="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <div className="container">
+        <div className="container-fluid">
+          <a className="navbar-brand" href="/">FakeShop</a>
+        </div>
     </div>
+      </nav>
   );
 }
 
