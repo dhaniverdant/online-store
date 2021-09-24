@@ -1,0 +1,18 @@
+.detail-wrapper {
+  margin: 5%;
+  max-width: 60%;
+}
+
+@media (min-width: 320px) and (max-width: 425px) {
+  .detail-wrapper {
+    margin: 20% 2%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 1024px) {
+  .detail-wrapper {
+    margin: 10% 5%;
+    max-width: 100%;
+  }
+}
